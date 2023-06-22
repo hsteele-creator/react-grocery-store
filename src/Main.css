@@ -1,0 +1,31 @@
+#main {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+#main span {
+    color: #1B9303;
+    padding: 0 5px;
+}
+
+#main p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#main-button {
+    border: none;
+    padding: 10px;
+    background-color: #1B9303;
+    color: white;
+    border: 1px solid #1B9303;;
+}
