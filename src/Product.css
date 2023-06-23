@@ -1,0 +1,33 @@
+.product-card {
+    width: 200px;
+    height: 350px;
+    padding: 40px 60px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    /* border: 0.5px solid #1B9303; */
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product-btn {
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #1B9303;
+}
+
+.product-card span {
+    color: #1B9303;
+    font-weight: bold;
+}
+
+.product-card h1 {
+    margin: 0;
+}
