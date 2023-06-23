@@ -1,15 +1,15 @@
 import watermelon from "./watermelon.webp";
 import apple from "./apple.jpeg";
 import grapes from "./grapes.webp";
-import cheezeits from "./cheeze-its.jpeg";
 import pretzels from "./pretzels.webp";
 import chips from "./chips.webp";
 import soda from "./soda-bottle.webp";
-import redbull from "./red-bull.jpeg";
+import redbull from "./red-bull.webp";
 import waterBottle from "./water-bottle.jpeg";
 import hamburger from "./hamburger.webp";
-import hotdogs from "./hot-dogs.jpeg";
-import steak from "./steak.jpeg";
+import hotdogs from "./hotdogs.webp";
+import steak from "./steak.webp";
+import oreos from "./oreos.webp"
 
 
 const Data = [
@@ -35,9 +35,9 @@ const Data = [
         category : "fruit"
     },
     {
-        name: "cheeze its",
+        name: "oreos",
         price : 5.99,
-        image: cheezeits,
+        image: oreos,
         quantity : "1",
         category : "snack"
     },
