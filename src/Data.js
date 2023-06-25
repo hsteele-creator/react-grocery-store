@@ -14,84 +14,84 @@ import oreos from "./oreos.webp"
 
 const Data = [
     {
-        name: "watermelon",
+        name: "Watermelon",
         price : 3.99,
         image: watermelon,
         quantity : 1,
         category : "fruit"
     },
     {
-        name: "grapes",
+        name: "Grapes",
         price : 1.99,
         image: grapes,
         quantity : 1,
         category : "fruit"
     },
     {
-        name: "apple",
-        price : 69,
+        name: "Apple",
+        price : 0.69,
         image: apple,
         quantity : 1,
         category : "fruit"
     },
     {
-        name: "oreos",
+        name: "Oreos",
         price : 5.99,
         image: oreos,
         quantity : 1,
         category : "snack"
     },
     {
-        name: "pretzels",
+        name: "Pretzels",
         price : 2.49,
         image: pretzels,
         quantity : 1,
         category : "snack"
     },
     {
-        name: "chips",
+        name: "Chips",
         price : 1.99,
         image: chips,
         quantity : 1,
         category : "snack"
     },
     {
-        name: "soda",
+        name: "Soda",
         price : 1.49,
         image: soda,
         quantity : 1,
         category : "drink"
     },
     {
-        name: "red bull",
+        name: "Red Bull",
         price : 0.99,
         image: redbull,
         quantity : 1,
         category : "drink"
     },
     {
-        name: "water bottle",
+        name: "Water Bottle",
         price : 0.59,
         image: waterBottle,
         quantity : 1,
         category : "drink"
     },
     {
-        name: "hamburger",
+        name: "Hamburger",
         price : 7.99,
         image: hamburger,
         quantity : 1,
         category : "meat"
     },
     {
-        name: "hot dogs",
+        name: "Hot Dogs",
         price : 3.49,
         image: hotdogs,
         quantity : 1,
         category : "meat"
     },
     {
-        name: "steak",
+        name: "Steak",
         price : 13.99,
         image: steak,
         quantity : 1,

@@ -20,7 +20,7 @@ const rootReducer = (state = INITIAL_STATE, action) => {
             ...state.cart,
             {
               name: action.payload.name,
-              pirce: action.payload.price,
+              price: action.payload.price,
               image: action.payload.image,
               category: action.payload.category,
               quantity: action.payload.quantity,
