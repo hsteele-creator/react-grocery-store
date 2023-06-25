@@ -67,3 +67,17 @@
 .product-btn:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 700px) {
+
+    #mini-nav a {
+        font-size: 12px;
+    }
+    #mini-nav p {
+        font-size: 12px;
+    }
+
+    #cart {
+        height: 22px;
+    }
+}

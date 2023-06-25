@@ -1,19 +1,12 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./Product.css";
+import { addToCart } from "./actionCreators";
 
 const Product = ({ image, name, price, category }) => {
   const dispatch = useDispatch();
   const store = useSelector((state) => state);
   const [quantity, setQuantity] = useState(1);
-
-
-  const addToCart = (image, name, price, category, quantity) => {
-    return {
-      type: "ADD_TO_CART",
-      payload: { image, name, price, category, quantity },
-    };
-  };
 
   return (
     <>

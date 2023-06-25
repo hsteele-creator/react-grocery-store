@@ -8,6 +8,7 @@ import cart from "./cart.png";
 const Products = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products);
+  const cartItems = useSelector(state => state.cart.length)
 
   const [type, setType] = useState("");
 
