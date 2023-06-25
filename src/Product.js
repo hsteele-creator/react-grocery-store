@@ -2,11 +2,19 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./Product.css";
 
-const Product = ({ image, name, price }) => {
+const Product = ({ image, name, price, category }) => {
   const dispatch = useDispatch();
   const store = useSelector((state) => state);
-  console.log(store);
   const [quantity, setQuantity] = useState(1);
+
+
+  const addToCart = (image, name, price, category, quantity) => {
+    return {
+      type: "ADD_TO_CART",
+      payload: { image, name, price, category, quantity },
+    };
+  };
+
   return (
     <>
       <div className="product-card">
@@ -22,9 +30,16 @@ const Product = ({ image, name, price }) => {
             id="qty"
             className="qty"
             value={quantity}
-            onChange={(e) => setQuantity(e.target.value)}
+            onChange={(e) => setQuantity(Number(e.target.value))}
           ></input>
-          <button className="product-btn">Add To Cart</button>
+          <button
+            className="product-btn"
+            onClick={() =>
+              dispatch(addToCart(image, name, price, category, quantity))
+            }
+          >
+            Add To Cart
+          </button>
         </div>
       </div>
     </>

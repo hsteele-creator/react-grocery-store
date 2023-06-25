@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Product from "./Product";
 import "./Products.css";
+import { NavLink } from "react-router-dom";
+import cart from "./cart.png";
 
 const Products = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products);
 
-  const [type, setType] = useState("meat");
+  const [type, setType] = useState("");
 
   const updateProducts = () => {
     if (type === "") {
@@ -21,12 +23,18 @@ const Products = () => {
 
   return (
     <>
-    <div id="mini-nav">
-        <p onClick={() => setType("")}>All Products</p>
-        <p onClick={() => setType("meat")}>Meat</p>
-        <p onClick={() => setType("fruit")}>Fruit</p>
-        <p onClick={() => setType("drink")}>Drinks</p>
-    </div>
+      <div id="mini-nav">
+        <NavLink to="/">Home</NavLink>
+
+        <div id="categories-container">
+          <p onClick={() => setType("")}>All Products</p>
+          <p onClick={() => setType("meat")}>Meat</p>
+          <p onClick={() => setType("fruit")}>Fruit</p>
+          <p onClick={() => setType("drink")}>Drinks</p>
+        </div>
+
+        <NavLink to="/cart"><img id="cart" src={cart} /></NavLink>
+      </div>
       <div className="products-container">
         {updatedProducts.map((product) => {
           return (
@@ -34,6 +42,7 @@ const Products = () => {
               image={product.image}
               name={product.name}
               price={product.price}
+              category={product.category}
             />
           );
         })}

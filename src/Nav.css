@@ -1,0 +1,16 @@
+#nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1B9303;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#nav-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart-img {
+    height: 25px;
+}
