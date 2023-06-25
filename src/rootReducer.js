@@ -6,13 +6,18 @@ console.log(INITIAL_STATE);
 const rootReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case "ADD_TO_CART":
-      console.log("added");
       if (state.cart.some((product) => product.name === action.payload.name)) {
-        state.cart.map((item) => {
-          return item.name === action.payload.name
-            ? (item.quantity = item.quantity + action.payload.quantity)
-            : item;
+        const product = state.cart.map((item) => {
+          if (item.name === action.payload.name) {
+            item.quantity = item.quantity + action.payload.quantity;
+          }
+          return item;
         });
+
+        return {
+          ...state,
+          cart: [...product],
+        };
       } else {
         return {
           ...state,
