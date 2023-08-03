@@ -24,8 +24,12 @@
 
 #main-button {
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #1B9303;
     color: white;
     border: 1px solid #1B9303;;
+}
+
+#main-button:hover {
+    cursor: pointer;
 }
