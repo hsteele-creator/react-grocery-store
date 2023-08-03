@@ -60,21 +60,21 @@ const Data = [
         price : 1.49,
         image: soda,
         quantity : 1,
-        category : "drink"
+        category : "drinks"
     },
     {
         name: "Red Bull",
         price : 0.99,
         image: redbull,
         quantity : 1,
-        category : "drink"
+        category : "drinks"
     },
     {
         name: "Water Bottle",
         price : 0.59,
         image: waterBottle,
         quantity : 1,
-        category : "drink"
+        category : "drinks"
     },
     {
         name: "Hamburger",

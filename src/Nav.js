@@ -8,7 +8,7 @@ const Nav = () => {
         <>
         <div id="nav-container">
         <NavLink to="/">Home</NavLink>
-        <NavLink tp="/cart"><img className="cart-img" src={cart} /></NavLink>
+        <NavLink to="/cart"><img className="cart-img" src={cart} /></NavLink>
         </div>
         </>
     )

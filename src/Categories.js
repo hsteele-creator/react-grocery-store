@@ -8,7 +8,7 @@ import drinks from "./drinks.jpg";
 const Categories = () => {
   return (
     <>
-      <h1>Categories</h1>
+      <h1 id="categories-header">Categories</h1>
       <div id="categories-container">
         <Category img={fruit} title={"Fruit"} text={"Check out our collection of fresh produce"} />
         <Category img={meat} title={"Meat"} text={"Check out out collection of fresh meat"} />

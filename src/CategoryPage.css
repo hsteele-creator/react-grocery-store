@@ -1,0 +1,9 @@
+.category-title {
+    text-align: center;
+}
+
+.category-page-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
