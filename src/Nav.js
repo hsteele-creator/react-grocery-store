@@ -2,11 +2,13 @@ import React from "react";
 import "./Nav.css";
 import { NavLink } from "react-router-dom";
 import cart from "./cart.png";
+import { useSelector } from "react-redux";
 
 const Nav = () => {
+  const productsTotal = useSelector((state) => state.cart).length;
+  console.log(productsTotal);
   return (
     <>
-
       <div id="mini-nav">
         <NavLink to="/">Home</NavLink>
 
@@ -26,8 +28,11 @@ const Nav = () => {
           </NavLink>
         </div>
 
-        <NavLink to="/">
-          <img id="cart" src={cart} />
+        <NavLink to="/cart">
+          <div className="nav-cart-container">
+            <img id="cart" src={cart} />
+            <p className="cart-total">{productsTotal}</p>
+          </div>
         </NavLink>
       </div>
     </>

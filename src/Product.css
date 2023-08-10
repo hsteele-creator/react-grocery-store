@@ -30,6 +30,29 @@
     margin: 0;
 }
 
+.input-add {
+    display: flex;
+    justify-content: space-between;
+}
+
+#purchase-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-page-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    color: white;
+    background-color: #1B9303;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin: 10px 0;
+}
+
+.product-page-btn:hover {
+    cursor: pointer;
+}
 
 @media screen and (max-width: 700px) {
     .purchase-container {

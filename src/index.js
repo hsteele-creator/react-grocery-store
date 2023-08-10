@@ -10,6 +10,7 @@ import Products from "./Products";
 import Main from "./Main"
 import CategoryPage from "./CategoryPage";
 import Cart from "./Cart"
+import ProductPage from "./ProductPage";
 
 const store = createStore(rootReducer)
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -21,6 +22,7 @@ root.render(
           <Route path="/" element={<Main />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:category" element={<CategoryPage />} />
+          <Route path="/product/:product" element={<ProductPage />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
       </BrowserRouter>
