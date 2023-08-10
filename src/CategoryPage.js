@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import Product from "./Product";
 import "./CategoryPage.css";
 import Nav from "./Nav";
+import { NavLink } from "react-router-dom";
 
 const CategoryPage = () => {
   const { category } = useParams();
@@ -15,7 +16,12 @@ const CategoryPage = () => {
   return (
     <>
       <Nav />
-      <h1 className="category-title">{category.slice(0,1).toUpperCase() + category.slice(1, category.length)}</h1>
+
+
+      <h1 className="category-title">
+        {category.slice(0, 1).toUpperCase() +
+          category.slice(1, category.length)}
+      </h1>
       <div className="category-page-container">
         {categoryProducts.map((product) => {
           return (

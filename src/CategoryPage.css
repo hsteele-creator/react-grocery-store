@@ -6,4 +6,27 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#back-btn {
+    padding: 14px;
+    /* margin: 10px; */
+    border: none;
+    background-color: #1B9303;
+    color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    font-weight: bold;
+}
+
+#back-btn-container {
+    width: 200px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#back-btn:hover {
+    cursor: pointer;
 }

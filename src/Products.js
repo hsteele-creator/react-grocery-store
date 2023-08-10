@@ -1,43 +1,41 @@
-import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
+import { useSelector } from "react-redux";
 import Product from "./Product";
 import "./Products.css";
 import { NavLink } from "react-router-dom";
 import cart from "./cart.png";
+import Nav from "./Nav"
 
 const Products = () => {
-  const dispatch = useDispatch();
   const products = useSelector((state) => state.products);
-  const cartItems = useSelector(state => state.cart.length)
-
-  const [type, setType] = useState("");
-
-  const updateProducts = () => {
-    if (type === "") {
-      return products;
-    } else {
-      return products.filter((product) => product.category === type);
-    }
-  };
-
-  const updatedProducts = updateProducts();
 
   return (
     <>
+    {/* <Nav /> */}
       <div id="mini-nav">
+
         <NavLink to="/">Home</NavLink>
 
         <div id="categories-container">
-          <p onClick={() => setType("")}>All Products</p>
-          <p onClick={() => setType("meat")}>Meat</p>
-          <p onClick={() => setType("fruit")}>Fruit</p>
-          <p onClick={() => setType("drink")}>Drinks</p>
+          <NavLink to="/products">
+            {" "}
+            <p>All Products</p>
+          </NavLink>
+          <NavLink to="/products/meat">
+            <p>Meat</p>
+          </NavLink>
+          <NavLink to="/products/fruit">
+            <p>Fruit</p>
+          </NavLink>
+          <NavLink to="/products/drinks">
+            <p>Drinks</p>
+          </NavLink>
         </div>
 
-        <NavLink to="/cart"><img id="cart" src={cart} /></NavLink>
+        <NavLink to="/"><img id="cart" src={cart} /></NavLink>
       </div>
       <div className="products-container">
-        {updatedProducts.map((product) => {
+        {products.map((product) => {
           return (
             <Product
               image={product.image}
