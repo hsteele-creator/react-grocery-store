@@ -9,13 +9,13 @@ const Nav = () => {
   console.log(productsTotal);
   return (
     <>
-      <div id="mini-nav">
+      <div id="nav-container">
         <NavLink to="/">Home</NavLink>
 
-        <div id="categories-container">
+        <div id="middle-nav">
           <NavLink to="/products">
             {" "}
-            <p>All Products</p>
+            <p>All</p>
           </NavLink>
           <NavLink to="/products/meat">
             <p>Meat</p>
@@ -29,9 +29,9 @@ const Nav = () => {
         </div>
 
         <NavLink to="/cart">
-          <div className="nav-cart-container">
-            <img id="cart" src={cart} />
+          <div id="cart-nav">
             <p className="cart-total">{productsTotal}</p>
+            <img id="cart" src={cart} />
           </div>
         </NavLink>
       </div>
