@@ -5,7 +5,7 @@ import cart from "./cart.png";
 import { useSelector } from "react-redux";
 
 const Nav = () => {
-  const productsTotal = useSelector((state) => state.cart).length;
+  const productsTotal = useSelector((state) => state.cart).filter(item => item.quantity !== 0).length;
   console.log(productsTotal);
   return (
     <>

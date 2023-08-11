@@ -6,11 +6,11 @@ import CartProduct from "./CartProduct";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
-  console.log(cart);
+  console.log(cart.filter(item => item.quantity !== 0));
   return (
     <>
       <Nav />
-      {cart.map((product) => {
+      {cart.filter(item => item.quantity !== 0).map((product) => {
         return (
           <CartProduct
             name={product.name}

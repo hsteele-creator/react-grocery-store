@@ -10,9 +10,9 @@ const Categories = () => {
     <>
       <h1 id="categories-header">Categories</h1>
       <div id="categories-container">
-        <Category img={fruit} title={"Fruit"} text={"Check out our collection of fresh produce"} />
-        <Category img={meat} title={"Meat"} text={"Check out out collection of fresh meat"} />
-        <Category img={drinks} title={"Drinks"} text={"Check out our collections of ice cold drinks"} />
+        <Category img={fruit} title={"Fruit"} text={"Check out our collection of fresh produce."} />
+        <Category img={meat} title={"Meat"} text={"Check out our collection of fresh meat, straight from the farm."} />
+        <Category img={drinks} title={"Drinks"} text={"Check out our collections of ice cold drinks."} />
       </div>
     </>
   );
