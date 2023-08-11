@@ -20,7 +20,7 @@ const Main = () => {
         }}
       >
         <h1>
-          Fresh and <span>Organic</span>Products
+          Fresh and <span>Organic </span>Products
         </h1>
         <p>Fresh Food straight from our farm right to your table</p>
 
